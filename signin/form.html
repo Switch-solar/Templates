@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Sign In</title>
+
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}" />
+
+    <link href="https://raw.githubusercontent.com/Nova-electric/Media/master/logo_theme.png"
+      rel="shortcut icon" type="image/x-icon"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+		  <a href="{% url 'home' %}">
+        	<img src="https://raw.githubusercontent.com/Nova-electric/Media/master/Site-ID.png" alt="NOVA" />
+		  </a>
+	  </div>
+    </header>
+    <section class="body">
+      <div class="container" id="container">
+        <div class="form-container">
+          <form role="form" action="" method="post">
+            <h1>Sign in</h1>
+                {% block content %}
+                {% endblock content %}
+                {% csrf_token %}
+            <p>
+                {% block input %}
+    				{{ form }}
+                {% endblock input %}
+            </p>
+              <button type="submit">Submit</button>
+          </form>
+        </div>
+          </div>
+    </section>
+  </body>
+</html>

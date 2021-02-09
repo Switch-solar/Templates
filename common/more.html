@@ -1,0 +1,34 @@
+{% extends 'common/dashboard.html' %}
+
+{% block title %} More {% endblock title %}
+
+{% block pagename %} More {% endblock pagename %}
+
+{% block page_brief %}
+    Want a little more?
+{% endblock page_brief %}
+
+{% block more %}
+    <!-- Nav Item - More -->
+    <li class="nav-item active">
+    <a class="nav-link" href="{% url 'more' %}">
+      <i class="fas fa-fw fa-tachometer-alt"></i>
+      <span>More</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+{% endblock more %}
+
+{% block form_input %}
+{% endblock form_input %}
+
+{% block form_button %}
+{% endblock form_button %}
+
+
+{% block content %}
+    <a class="btn btn-primary btn-sm" href="{% url 'agent:set_up' %}">Become a Top-up Agent</a><br>
+    <br>
+    <a class="btn btn-primary btn-sm" href="{% url 'retailer:set_up' %}">Become an Electricity retailer</a><br>
+{% endblock content %}

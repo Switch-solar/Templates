@@ -1,138 +1,204 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Application</title>
-    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--===============================================================================================-->
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://raw.githubusercontent.com/Nova-electric/Media/master/favicon.ico"
+    <meta
+      name="description"
+      content="Nova - electric"
     />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    <meta
+      name="keywords"
+      content="Loan Company, Loan Agency, Students Loan, Car Loan, Home Loan, Loan Product, Personal Loan, Bad credit, Loan Advisor, Financial Website Template, Banking, Loan provider, Bootstrap Template, Landing Page, EasyLoan, Loan HTML Template"
     />
-    <!--===============================================================================================-->
+    <meta name="author" content="" />
+
+    <title>EasyLoan - Loan HTML Template</title>
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.0/css/all.css"
-	/>
-	
-    <!--===============================================================================================-->
+            rel="shortcut icon"
+            href="https://raw.githubusercontent.com/poweredbymagic/Media/master/logo_theme.png"
+            type="image/x-icon"
+    />
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
     <link href="{% static 'css/application.css' %}" rel="stylesheet" />
-    <!--===============================================================================================-->
+
+    <!-- Responsive CSS -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+    <style>
+    header {
+      overflow-y: auto;
+    }
+
+    form {
+      color: red;
+      font-size: 14px;
+      }
+
+    select {
+      color: #666;
+      margin-top: 10px;
+    }
+
+    ul, li {
+        display: inline-block;
+        padding-left: 0px;
+    }
+
+    .site-id {
+        width: 20%;
+    }
+
+      label {
+        font-weight: 400;
+      }
+
+      h4.med {
+        font-size: 1.6rem;
+      }
+
+      .form-check  {
+        display: inline-block;
+        padding: 0px;
+      }
+
+      header.car_loan {
+  background-image: linear-gradient(
+      rgba(21, 84, 154, 0.4),
+      rgba(21, 84, 154, 0.4)
+    ),
+    url("https://raw.githubusercontent.com/poweredbymagic/Media/master/electric-bulb.jpg");
+  background-image: -webkit-linear-gradient(
+      rgba(21, 84, 154, 0.4),
+      rgba(21, 84, 154, 0.4)
+    ),
+    url("https://raw.githubusercontent.com/poweredbymagic/Media/master/electric-bulb.jpg");
+  background-image: -moz-linear-gradient(
+      rgba(21, 84, 154, 0.4),
+      rgba(21, 84, 154, 0.4)
+    ),
+    url("https://raw.githubusercontent.com/poweredbymagic/Media/master/electric-bulb.jpg");
+  background-image: -ms-linear-gradient(
+      rgba(21, 84, 154, 0.4),
+      rgba(21, 84, 154, 0.4)
+    ),
+    url("https://raw.githubusercontent.com/poweredbymagic/Media/master/electric-bulb.jpg");
+  background-image: -o-linear-gradient(
+      rgba(21, 84, 154, 0.4),
+      rgba(21, 84, 154, 0.4)
+    ),
+    url("https://raw.githubusercontent.com/poweredbymagic/Media/master/electric-bulb.jpg");
+}
+    </style>
   </head>
-  <body>
-    <div class="container-contact100">
-      <div class="wrap-contact100">
-        <form class="contact100-form validate-form">
-          <span class="contact100-form-title"> <img src="https://raw.githubusercontent.com/Nova-electric/Media/master/Site-ID.png" width="50%"> Survey </span>
 
-          <div
-            class="wrap-input100 validate-input"
-            data-validate="Name is required"
-          >
-            <span class="label-input100">Your Name</span>
-            <input
-              class="input100"
-              type="text"
-              name="name"
-              placeholder="Enter your full name"
-            />
-            <span class="focus-input100"></span>
-          </div>
-
-          <div
-            class="wrap-input100 validate-input"
-            data-validate="Valid email is required: ex@abc.xyz"
-          >
-            <span class="label-input100">Email</span>
-            <input
-              class="input100"
-              type="text"
-              name="email"
-              placeholder="Enter your email addess"
-            />
-            <span class="focus-input100"></span>
-          </div>
-
-          <div class="wrap-input100">
-            <span class="label-input100">Interest</span>
-            <textarea
-              class="input100"
-              type="text"
-              name="interest"
-              placeholder="Tell us what interests you about our service"
-            ></textarea>
-            <span class="focus-input100"></span>
-          </div>
-
-          <div class="wrap-input100 input100-select pb-4">
-            <span class="label-input100">How did you hear about us</span>
-            <div>
-              <select class="selection-2" name="info">
-                <option>Choose Option</option>
-                <option>Your grandma</option>
-                <option>The quiet kid in your class</option>
-                <option>Banners/TV commercials/Ads/Flyers</option>
-                <option>
-                  You just woke up one day and decided to search
-                  nova-electric.com? Mumu
-                </option>
-                <option>Other</option>
-              </select>
-            </div>
-            <span class="focus-input100"></span>
-          </div>
-
-          <div
-            class="wrap-input100 validate-input"
-            data-validate="Address is required"
-          >
-            <span class="label-input100">Your house address chairman</span>
-            <textarea
-              class="input100"
-              name="message"
-              placeholder="Where do you want this service installed"
-            ></textarea>
-            <span class="focus-input100"></span>
-          </div>
-
-          <div class="wrap-input100">
-            <span class="label-input100">Message/Suggestions</span>
-            <textarea
-              class="input100"
-              name="message"
-              placeholder="Please tell us any extra info we should know, before we come now and dog pursue us"
-            ></textarea>
-            <span class="focus-input100"></span>
-          </div>
-
-          <div class="container-contact100-form-btn">
-            <div class="wrap-contact100-form-btn">
-              <div class="contact100-form-bgbtn"></div>
-              <button class="contact100-form-btn">
-                <span>
-                  Submit
-                  <i
-                    class="fa fa-long-arrow-right m-l-7"
-                    aria-hidden="true"
-                  ></i>
-                </span>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
+  <body id="page-top" style="overflow: visible">
+    <!-- Preloader -->
+    <div id="preloader" style="display: none">
+      <div id="wave" style="display: none"></div>
     </div>
+    <div id="mask"></div>
+    <!-- End Of Preloader -->
 
-    <script src="j{% static 'js/application.js' %} "></script>
+    <!-- NavBar -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
+      <div class="container">
+        <!-- Brand Logo -->
+        <div class="navbar-header">
+          <a class="navbar-brand page-scroll" href="#page-top">
+            <img class="site-id"
+              src="https://raw.githubusercontent.com/poweredbymagic/Media/master/Site-ID.png"
+              alt="MP Logo"
+            />
+          </a>
+        </div>
+
+      </div>
+    </nav>
+    <!-- End Of Nav Bar -->
+
+    <!-- Header -->
+    <header id="page_top" class="car_loan">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="header-content">
+              <div class="header-content-inner">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Natus accusantium doloremque porro accusamus nesciunt ex.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="form-container">
+              <div class="form-mockup">
+                <h2>Apply Now</h2>
+                <form method="post">
+                  {% csrf_token %}
+                  <div class="form-group radios">
+                    {{ form.first_name }}
+                    {{ form.first_name.error }}
+                  </div>
+                  <div class="form-group">
+                    {{ form.last_name }}
+                    {{ form.last_name.error }}
+                    <span class="form-check">
+                      {{ form.gender }}
+                      {{ form.gender.errors }}
+                    </span>
+                  </div>
+
+                  <h4 class="med">How do we contact you?</h4>
+                  <div class="form-group">
+                    {{ form.email }}
+                    {{ form.email.errors }}
+                  </div>
+                  <div class="form-group">
+                    {{ form.mobile }}
+                    {{ form.mobile.errors }}
+                  </div>
+                  <br />
+                  <h4 class="med">
+                    What address would you want this service installed
+                  </h4>
+                  <div class="form-group">
+                    {{ form.address }}
+                    {{ form.address.errors }}
+                    {{ form.state }}
+                    {{ form.state.errors }}
+                    <span class="form-check">
+                      {{ form.type }}
+                      {{ form.type.errors }}
+                    </span>
+                  </div>
+
+                  <h4 class="med">How did you learn about this service?</h4>
+                  <div class="form-group">
+                    {{ form.lead }}
+                    {{ form.lead.errors }}
+                  </div>
+                  <button type="submit" class="btn btn-default quote_btn">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="pac-container pac-logo" style="display: none"></div>
   </body>
 </html>
 

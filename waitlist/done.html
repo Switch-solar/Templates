@@ -2,6 +2,7 @@
 {% load static %}
 <html lang="en" >
    <head>
+<!--      <meta name="viewport" content= "width=device-width, user-scalable=no">-->
       <meta charset="UTF-8">
       <title>Application Done</title>
        <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,9 +23,10 @@
          }
          font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
          }
+
       </style>
    </head>
-   <body>
+   <body class="disable-sturvs">
       <!-- partial:index.partial.html -->
       <!-- partial -->
       <div class="magic_power">
@@ -50,6 +52,15 @@
              transform: translate(-50%, -50%);
              font-size: 150%;
              }
+             
+             .disable-sturvs {
+    overflow-y:hidden;
+    overflow-x:hidden;
+      -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
+}
       </style>
    </body>
 </html>

@@ -10,7 +10,7 @@
       <meta content="" name="description">
       <meta content="" name="keywords">
       <!-- Favicon -->
-      <link href="https://raw.githubusercontent.com/poweredbymaigic/Media/master/logo_theme.png" rel="icon">
+      <link href="https://raw.githubusercontent.com/poweredbymagic/Media/master/logo.png" rel="icon">
       <!-- Google Fonts -->
       <link
          href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -29,8 +29,10 @@
       <header id="header" class="fixed-top ">
          <div class="container d-flex align-items-center">
             <a href="{% url 'home' %}" class="logo mr-auto"><img
-               src="https://raw.githubusercontent.com/poweredbymaigic/Media/master/Site-ID.png" alt=""
-               class="img-fluid"></a>
+               src="https://raw.githubusercontent.com/poweredbymagic/Media/master/logo.png" alt=""
+               class="img-fluid">
+                <span class="site-name">Magic⚡Power</span>
+            </a>
             <nav class="nav-menu d-none d-lg-block">
                <ul>
                   <li class="active-nav"><a href="#hero"><strong>Home</strong></a></li>
@@ -49,12 +51,11 @@
       <!-- ======= Hero Section ======= -->
       <section id="hero">
          <div class="hero-container">
-            <h3>Welcome to <strong>Magic⚡Power</strong></h3>
-            <h1>We're Solar Company</h1>
-            <h2>We are team of Workers with the Aim of bringing you Power</h2>
+            <h1>Electricity Made Easy</h1>
+            <h2>With Magic⚡Power, all your NEPA problems goes away</h2>
             <div class="links">
-               <a href="#about" class="btn-get-started scrollto">Get Started</a>
-               <a class="btn-services" href="{% url 'waitlist:apply' %}">Apply Now</a>
+               <a href="#about" class="btn-get-started scrollto">Learn More</a>
+               <a class="btn-services" href="{% url 'waitlist:apply' %}">Apply for a connection</a>
             </div>
          </div>
       </section>
@@ -65,8 +66,8 @@
             <div class="container">
                <div class="section-title">
                   <h2>About</h2>
-                  <h3>Learn More <span>About Us</span></h3>
-                  <p>No more power cuts</p>
+                  <h3>About <span>Us</span></h3>
+                  <p>We are the electricity company of the future</p>
                </div>
                <div class="row content">
                   <div class="col-lg-6">
@@ -76,7 +77,9 @@
                         No more power cuts, Enjoy 24/7 electricity for your home and workplace.
                      </p>
                      <p>
-                        Our service is
+                        Get freedom and peace of mind on our service.
+                        You will never have to use candles, petrol generators, or kerosene lamps again.
+                        Our service is designed to be
                      </p>
                      <ul class="list">
                         <li><i class="fas fa-check"></i> Stress free</li>
@@ -86,12 +89,16 @@
                   </div>
                   <div class="col-lg-6 pt-4 pt-lg-0">
                      <p>
-                        Get freedom and peace of mind on our service.
-                        You will never have to use candles, petrol generators, or kerosene lamps again.
-                        <br/><br/>
-                        Apply now and get connected for free.
+                        But that's not all. By using our service, you are helping to save our beloved <strong><i>planet </i></strong>
+                        and the many creatures that call it home.
+                     </p><br>
+                      <h5><b>How it works.</b></h5>
+                     <p>
+                        Apply for a connection to get our solar power system, plus a meter,
+                         installed at your place (no payments required).
+                        Then you can start enjoying your awesome electricity at ₦46.80/kW
                      </p>
-                     <a class="btn-learn-more apply" href="{% url 'waitlist:apply' %}">Apply Now</a>
+                     <a class="btn-learn-more apply" href="{% url 'waitlist:apply' %}">Apply now and get connected for free</a>
                   </div>
                </div>
             </div>
@@ -104,6 +111,7 @@
                <div class="section-title">
                   <h2>Problems</h2>
                   <h3>Facing the <span>Problem</span></h3>
+                  <p>A brief look at why Magic⚡Power was founded</p>
                </div>
                <div class="slideshow-inner">
                   <div class="mySlides fade">
@@ -145,31 +153,34 @@
             <div class="container">
                <div class="section-title">
                   <h2>Services</h2>
-                  <h3>We do offer awesome <span>Services</span></h3>
-                  <p>These are the services we offer to ensure you have a good time with Us (this is just random stuff
-                     here we can remove it later sha).
-                  </p>
+                  <h3><span>Services </span>we've included</h3>
+                  <p>We are determined to make your experience with us as smooth as possible</p>
                </div>
                <div class="row">
                   <div class="col-md-6 col-lg-3 flex-fix align-items-stretch mb-5 mb-lg-0">
                      <div class="icon-box">
                         <div class="icon"><i class="fas fa-tachometer-alt"></i></div>
                         <h4 class="title"><a href="">Metering</a></h4>
-                        <p class="description">NO estimated blls, <em>pay for what you use</em></p>
+                        <p class="description">
+                           NO estimated blls, you get to pay for just the elctricity you use</p>
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3 flex-fix align-items-stretch mb-5 mb-lg-0">
                      <div class="icon-box">
                         <div class="icon"><i class="fas fa-headset"></i></div>
                         <h4 class="title"><a href="">Care</a></h4>
-                        <p class="description">Get help anytime, anywhere</p>
+                        <p class="description">
+                           You can contact us for help anytime, anyday. Even on Christmas day</p>
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3 flex-fix align-items-stretch mb-5 mb-lg-0">
                      <div class="icon-box">
                         <div class="icon"><i class="fas fa-mobile-alt"></i></div>
                         <h4 class="title"><a href="">Apps</a></h4>
-                        <p class="description">Our friendly mobile apps help you maximize your value</p>
+                        <p class="description">
+                           Take control of your electricity everywhere you go.
+                           Pay bills or turn of the power from anywhere in the world.
+                        </p>
                      </div>
                   </div>
                   <div class="col-md-6 col-lg-3 flex-fix align-items-stretch mb-5 mb-lg-0">
@@ -191,54 +202,58 @@
                   <div class="col-md-12">
                      <div class="section-title">
                         <h2>Impact</h2>
-                        <h3>Our Social <span>Impact</span></h3>
-                        <p class="title-description">Magic Impact On The society blah blah blah</p>
+                        <h3>Making an <span>Impact</span></h3>
+                        <p class="title-description">
+                           We are proud to be making a huge difference in the lives of our users</p>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-lg-4 col-md-6 impact-item">
                         <div class="impact-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h4 class="impact-title"><a href="#">Affordable and clean energy</a></h4>
-                        <p class="impact-description">We Provide Affordable and clean energy</p>
+                        <h4 class="impact-title"><a href="#">Affordable and clean energy (SDG7)</a></h4>
+                        <p class="impact-description">
+                           Our goal is to become a multi-national provider of clean, affordable energy products,
+                           designed to reach even the most remote customers.
+                        </p>
                      </div>
                      <div class="col-lg-4 col-md-6 impact-item">
                         <div class="impact-icon"><i class="fas fa-briefcase"></i></div>
-                        <h4 class="impact-title"><a href="#">Decent work and economic growth</a></h4>
-                        <p class="impact-description">Description that christwin will change because i cant strss my
-                           brainnnnnn
+                        <h4 class="impact-title"><a href="#">Decent work and economic growth (SDG8)</a></h4>
+                        <p class="impact-description">
+                           Magic⚡Power is bridging the gap of electricity access that has hindered
+                           employment and economic growth in many African communities
                         </p>
                      </div>
                      <div class="col-lg-4 col-md-6 impact-item">
                         <div class="impact-icon"><i class="fas fa-coins"></i></div>
-                        <h4 class="impact-title"><a href="#">No poverty</a></h4>
-                        <p class="impact-description">With our advanced technology we can help reduce the tariff and
-                           thereby reducing rate of expenses which can sometimes leads to penury <br/> ps: Na lie, we
-                           just want all your MONAAAAYYYYYYY!!!
+                        <h4 class="impact-title"><a href="#">No poverty (SDG1)</a></h4>
+                        <p class="impact-description">
+                           By having access to power, we are making it easier for families to escape poverty,
+                           as they can build a business from home, educate children and better managing their health.
                         </p>
                      </div>
                      <div class="col-lg-4 col-md-6 impact-item">
                         <div class="impact-icon"><i class="fas fa-industry"></i></div>
-                        <h4 class="impact-title"><a href="#">Industry, Innovation, and Infrastructure</a></h4>
-                        <p class="impact-description">Description that christwin will change because i cant strss my
-                           brainnnnnn
+                        <h4 class="impact-title"><a href="#">Industry, Innovation, and Infrastructure (SDG9)</a></h4>
+                        <p class="impact-description">
+                           Magic⚡Power offers efficient and affordable power to awaken the next generation
+                           of entrepreneurs, and inspire creativity across across Africa.
                         </p>
                      </div>
                      <div class="col-lg-4 col-md-6 impact-item">
                         <div class="impact-icon"><i class="fas fa-globe-africa"></i></div>
-                        <h4 class="impact-title"><a href="#">Climate action</a></h4>
-                        <p class="impact-description">Description that christwin will change because i cant strss my
-                           brainnnnnn
+                        <h4 class="impact-title"><a href="#">Climate action (SDG13)</a></h4>
+                        <p class="impact-description">
+                           Magic⚡Power is taking the fight against carbon emissions very seriously.
+                           Our solar power systems help our customers to reduce carbon emissions and protect the planet.
                         </p>
                      </div>
                      <div class="col-lg-4 col-md-6 impact-item">
                         <div class="impact-icon"><i class="fas fa-city"></i></div>
-                        <h4 class="impact-title"><a href="#">Sustainable cities and communities</a></h4>
-                        <p class="impact-description">We can sustain your city and community by using our solar
-                           technology to create robots and machines that can help you sustain your community by e.g
-                           cleaning your toilets and harvesting your yam trees. <br> we dont know how christwin wants
-                           to do it but he must do it if not kindly visit our nearest office and retuen our panels and
-                           battery thanks <br> disclaimer: dont even try it bros, once you don collect our panel you
-                           must use it, we no want again thanks god bless
+                        <h4 class="impact-title"><a href="#">Sustainable cities and communities (SDG11)</a></h4>
+                        <p class="impact-description">
+                           Our mission is to builds resilient and vibrant communities of tomorrow that unleash
+                           the potential of Africa's people and its natural resources.
                         </p>
                      </div>
                   </div>
@@ -251,13 +266,15 @@
             <div class="container wow fadeInUp">
                <div class="row">
                   <div class="col-md-8">
-                     <h3 class="subscribe-title">Apply for a connection now</h3>
-                     <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools,
-                        freebies, product announcements and much more!
+                     <h3 class="subscribe-title">Notice!</h3>
+                     <p class="subscribe-text">
+                         Due to the limited supply of installation equipment, we may have to
+                         temporarily shutdown the submitting of any new applications until further notice.
+                         However, applications still remain open while stock lasts.
                      </p>
                   </div>
                   <div class="col-md-4 subscribe-btn-container">
-                     <a class="subscribe-btn" href="{% url 'waitlist:apply' %}">Apply Now</a>
+                     <a class="subscribe-btn" href="{% url 'waitlist:apply' %}">Apply for a connection now</a>
                   </div>
                </div>
             </div>
@@ -322,8 +339,7 @@
                <div class="section-title">
                   <h2>Contact</h2>
                   <h3>Contact <span>Us</span></h3>
-                  <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-                     atque vitae autem.
+                  <p>We'll love to hear from you.
                   </p>
                </div>
                <!-- ======= Map Section ======= -->
@@ -337,17 +353,17 @@
                         <div class="address">
                            <i class="fas fa-map-marker-alt"></i>
                            <h4>Location:</h4>
-                           <p>1234 Enugu, Enugu Road</p>
+                           <p>University of Nigeria Nsukka Campus, Nsukka, Enugu, Nigeria</p>
                         </div>
                         <div class="email">
                            <i class="fas fa-envelope"></i>
                            <h4>Email:</h4>
-                           <p>nova-electric@gmail.com</p>
+                           <p>info.poweredbymagic@gmail.com</p>
                         </div>
                         <div class="phone">
                            <i class="fas fa-phone"></i>
                            <h4>Call:</h4>
-                           <p>+234 808 800 8000</p>
+                           <p>+234 808 114 7003</p>
                         </div>
                      </div>
                   </div>
@@ -413,10 +429,10 @@
          <!-- Call to action -->
          <ul class="list-unstyled list-inline text-center py-2">
             <li class="list-inline-item">
-               <h5 class="mb-1">Register for free</h5>
+               <h5 class="mb-1">Sign-in over here</h5>
             </li>
             <li class="list-inline-item">
-               <a href="/sign-in/" class="btn btn-danger btn-rounded waves-effect waves-light">Sign in!</a>
+               <a href="{% url 'signin:email' %}" class="btn btn-danger btn-rounded waves-effect waves-light">Sign in!</a>
             </li>
          </ul>
          <!-- Call to action -->
@@ -424,13 +440,29 @@
          <!-- Social buttons -->
          <ul class="list-unstyled list-inline text-center">
             <li class="list-inline-item">
-               <a class="btn-floating btn-fb mx-1 waves-effect waves-light">
-               <i class="fab fa-facebook-f"> </i>
+               <a class="btn-floating btn-tw mx-1 waves-effect waves-light" href="https://twitter.com/poweredbymagic_">
+               <i class="fab fa-twitter"> </i>
                </a>
             </li>
             <li class="list-inline-item">
-               <a class="btn-floating btn-tw mx-1 waves-effect waves-light">
-               <i class="fab fa-twitter"> </i>
+               <a class="btn-floating btn-tw mx-1 waves-effect waves-light" href="https://poweredbymagic.business.site">
+               <i class="fab fa-google"> </i>
+               </a>
+            </li>
+            <li class="list-inline-item">
+               <a class="btn-floating btn-li mx-1 waves-effect waves-light" href="https://www.linkedin.com/company/poweredbymagic">
+               <i class="fab fa-linkedin-in"> </i>
+               </a>
+            </li>
+            <li class="list-inline-item">
+               <a class="btn-floating btn-li mx-1 waves-effect waves-light" href="https://angel.co/poweredbymagic/">
+               <i class="fab fa-angellist "> </i>
+               </a>
+            </li>
+            <!--
+            <li class="list-inline-item">
+               <a class="btn-floating btn-fb mx-1 waves-effect waves-light">
+               <i class="fab fa-facebook-f"> </i>
                </a>
             </li>
             <li class="list-inline-item">
@@ -439,19 +471,15 @@
                </a>
             </li>
             <li class="list-inline-item">
-               <a class="btn-floating btn-li mx-1 waves-effect waves-light">
-               <i class="fab fa-linkedin-in"> </i>
-               </a>
-            </li>
-            <li class="list-inline-item">
                <a class="btn-floating btn-dribbble mx-1 waves-effect waves-light">
                <i class="fab fa-dribbble"> </i>
                </a>
             </li>
+            -->
          </ul>
          <!-- Social buttons -->
          <!-- Copyright -->
-         <div class="footer-copyright text-center py-3">© 2020 Copyright: Nova Electric
+         <div class="footer-copyright text-center py-3">© 2020 Copyright: Magic⚡Power
          </div>
          <!-- Copyright -->
       </footer>

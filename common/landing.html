@@ -1,383 +1,252 @@
 <!DOCTYPE html>
-{% extends "common/base.html" %}
-{% load static %}
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+    <link rel="shortcut icon" href="#" />
 
-   {% block css %}
-      {{ block.super }}
-      <!-- Custom CSS -->
-      <link href="{% static 'css/landing.css' %}" rel="stylesheet" />
-   {% endblock css %}
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic"/>
 
-   {% block header_content %}
+    <!-- STYLESHEETS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Concierge_files/new.css"/>
+    <link rel="stylesheet" href="Concierge_files/cards.css" />
+  </head>
+
+  <body>
+    <script>0</script>
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center">
+        <a href="/" class="logo mr-auto">
+          <img src="Concierge_files/SwitchLogo.svg" alt="" class="img-fluid">
+        </a>
         <nav class="nav-menu d-none d-lg-block">
-           <ul>
-              <li class="active-nav"><a href="#hero"><strong>Home</strong></a></li>
-              <li><a href="#about"><strong>About</strong></a></li>
-              <li><a href="#problems"><strong>Problems</strong></a></li>
-              <li><a href="#services"><strong>Services</strong></a></li>
-              <li><a href="#impact"><strong>Impact</strong></a></li>
-              <!--                    <li><a href="#testimonials"><strong>Testimonials</strong></a></li>-->
-              <li><a href="#contact"><strong>Contact</strong></a></li>
-           </ul>
+          <ul>
+            <li class="active-nav"><a href="#hero"><strong>Home</strong></a></li>
+            <li><a href="#about"><strong>About</strong></a></li>
+            <li><a href="#cards"><strong>Gallery</strong></a></li>
+            <li><a href="#footer"><strong>Contact</strong></a></li>
+          </ul>
         </nav>
-        <!-- .nav-menu -->
-   {% endblock header_content %}
+      </div>
+    </header>
 
-   {% block body_content %}
-      <!-- ======= Hero Section ======= -->
-      <section id="hero">
-         <div class="hero-container">
-            <h1>Electricity Made Easy</h1>
-            <h2>With Magic⚡Power, all your NEPA problems goes away</h2>
-            <div class="links">
-               <a href="#about" class="btn-get-started scrollto">More info</a>
-               <a class="btn-services" href="{% url 'waitlist:apply' %}">apply</a>
-            </div>
-         </div>
-      </section>
-      <!-- End Hero -->
-      <main id="main">
-         <!-- ======= About Section ======= -->
-         <section id="about" class="about">
-            <div class="container">
-               <div class="section-title">
-                  <h2>About</h2>
-                  <h3>About <span>Us</span></h3>
-                  <p>We are the electricity company of the future</p>
-               </div>
-               <div class="row content">
-                  <div class="col-lg-6">
-                     <p>
-                        Magic⚡Power is connecting homes and businesses to reliable and
-                        affordable solar powered electricity that will never run out.
-                        No more power cuts, Enjoy 24/7 electricity for your home and workplace.
-                     </p>
-                     <p>
-                        Get freedom and peace of mind on our service.
-                        You will never have to use candles, petrol generators, or kerosene lamps again.
-                        Our service is designed to be
-                     </p>
-                     <ul class="list">
-                        <li><i class="fas fa-check"></i> Stress free</li>
-                        <li><i class="fas fa-check"></i> Affordable</li>
-                        <li><i class="fas fa-check"></i> Powerful</li>
-                     </ul>
-                  </div>
-                  <div class="col-lg-6 pt-4 pt-lg-0">
-                     <p>
-                        But that's not all. By using our service, you are helping to save our beloved <strong><i>planet </i></strong>
-                        and the many creatures that call it home.
-                     </p><br>
-                      <h5><b>How it works.</b></h5>
-                     <p>
-                        Apply for a connection to get our solar power system, plus a meter,
-                         installed at your place (no payments required).
-                        Then you can start enjoying your awesome electricity at ₦46.80/kW
-                     </p>
-                     <a class="btn-learn-more apply" href="{% url 'waitlist:apply' %}">Apply now</a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- End About Section -->
-         <hr>
-         <!-- ======= Problems Section ======= -->
-         <section id="problems">
-            <div class="slideshow-container">
-               <div class="section-title">
-                  <h2>Problems</h2>
-                  <h3>Facing the <span>Problem</span></h3>
-                  <p>A brief look at why Magic⚡Power was founded</p>
-               </div>
-               <div class="slideshow-inner">
-                  <div class="mySlides fade">
-                     <img src='https://raw.githubusercontent.com/poweredbymagic/Media/master/satellite-aerial-image-Africa-Earth-night-lights-shutterstock-178142615-1068x602.jpg' style='width: 100%;'
-                        alt="A satellite image of sub-saharan africa at night" />
-                     <div class="text">A satellite image of Africa at night</div>
-                  </div>
-                  <div class="mySlides fade">
-                     <img src='https://raw.githubusercontent.com/poweredbymagic/Media/master/PDS-Urge-Calm-Over-Dumsor-Rumors.jpg' style='width: 100%;'
-                        alt="Girls studying with a kerosene lantern" />
-                     <div class="text">Girls studying with a kerosene lantern</div>
-                  </div>
-                  <div class="mySlides fade">
-                     <img src='https://raw.githubusercontent.com/poweredbymagic/Media/master/Fossil-fuel-generators.jpg' style='width: 100%;'
-                        alt="businesses using dirty generators" />
-                     <div class="text">Businesses using dirty generators</div>
-                  </div>
-                  <div class="mySlides fade">
-                     <img src='https://raw.githubusercontent.com/poweredbymagic/Media/master/ezgif.com-crop.jpg' style='width: 100%;'
-                        alt="Waiting for the power to be restored" />
-                     <div class="text">Waiting for the power to be restored</div>
-                  </div>
-               </div>
-               <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-               <a class="next" onclick='plusSlides(1)'>&#10095;</a>
-            </div>
+    <!-- Start Hero -->
+    <section id="hero">
+      <div class="hero-container">
+        <h1>Go solar in Style</h1>
+        <div class="links">
+          <a href="#about" class="btn-get-started scrollto">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Start About -->
+    <section id="about">
+      <div class="container literature">
+        <div class="row">
+          <h2 class="heading">About Us.</h2>
+          <p>
+            Switch makes it possible for her clients to completely move off-grid and 
+            off-diesel forever, through her Solar Electricity Service. 
+            <u class="promote">It's actually as easy as a monthly subscription fee</u>. 
+            Our clients receive top-notch electrification service, plus a comprehensive 
+            property insurance and full-time technical support.<br>
             <br>
-            <div style='text-align: center;'>
-               <span class="dot" onclick='currentSlide(1)'></span>
-               <span class="dot" onclick='currentSlide(2)'></span>
-               <span class="dot" onclick='currentSlide(3)'></span>
-               <span class="dot" onclick='currentSlide(4)'></span>
-            </div>
-         </section>
-         <!-- End Services Section -->
-         <hr>
-         <!-- ======= Services Section ======= -->
-         <section id="services" class="services">
-            <div class="container">
-               <div class="section-title">
-                  <h2>Services</h2>
-                  <h3><span>Services </span>we've included</h3>
-                  <p>We are determined to make your experience with us as smooth as possible</p>
-               </div>
-               <div class="row">
-                  <div class="col-md-6 col-lg-3 flex-fix align-items-stretch mb-5 mb-lg-0">
-                     <div class="icon-box">
-                        <div class="icon"><i class="fas fa-tachometer-alt"></i></div>
-                        <h4 class="title"><a href="">Metering</a></h4>
-                        <p class="description">
-                           NO estimated blls, you get to pay for just the elctricity you use</p>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 flex-fix align-items-stretch mb-5 mb-lg-0">
-                     <div class="icon-box">
-                        <div class="icon"><i class="fas fa-headset"></i></div>
-                        <h4 class="title"><a href="">Care</a></h4>
-                        <p class="description">
-                           You can contact us for help anytime, anyday. Even on Christmas day</p>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 flex-fix align-items-stretch mb-5 mb-lg-0">
-                     <div class="icon-box">
-                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                        <h4 class="title"><a href="">Apps</a></h4>
-                        <p class="description">
-                           Take control of your electricity everywhere you go.
-                           Pay bills or turn of the power from anywhere in the world.
-                        </p>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 flex-fix align-items-stretch mb-5 mb-lg-0">
-                     <div class="icon-box">
-                        <div class="icon"><i class="fas fa-smile"></i></div>
-                        <h4 class="title"><a href="">Discounts</a></h4>
-                        <p class="description">Get lots of discounts for saving the planet</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- End Services Section -->
-         <hr>
-         <!-- ======= social-impact Section ======= -->
-         <section id="impact">
-            <div class="container wow fadeInUp">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="section-title">
-                        <h2>Impact</h2>
-                        <h3>Making an <span>Impact</span></h3>
-                        <p class="title-description">
-                           We are proud to be making a huge difference in the lives of our users</p>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-lg-4 col-md-6 impact-item">
-                        <div class="impact-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h4 class="impact-title"><a href="#">Affordable and clean energy (SDG7)</a></h4>
-                        <p class="impact-description">
-                           Our goal is to become a multi-national provider of clean, affordable energy products,
-                           designed to reach even the most remote customers.
-                        </p>
-                     </div>
-                     <div class="col-lg-4 col-md-6 impact-item">
-                        <div class="impact-icon"><i class="fas fa-briefcase"></i></div>
-                        <h4 class="impact-title"><a href="#">Decent work and economic growth (SDG8)</a></h4>
-                        <p class="impact-description">
-                           Magic⚡Power is bridging the gap of electricity access that has hindered
-                           employment and economic growth in many African communities
-                        </p>
-                     </div>
-                     <div class="col-lg-4 col-md-6 impact-item">
-                        <div class="impact-icon"><i class="fas fa-coins"></i></div>
-                        <h4 class="impact-title"><a href="#">No poverty (SDG1)</a></h4>
-                        <p class="impact-description">
-                           By having access to power, we are making it easier for families to escape poverty,
-                           as they can build a business from home, educate children and better managing their health.
-                        </p>
-                     </div>
-                     <div class="col-lg-4 col-md-6 impact-item">
-                        <div class="impact-icon"><i class="fas fa-industry"></i></div>
-                        <h4 class="impact-title"><a href="#">Industry, Innovation, and Infrastructure (SDG9)</a></h4>
-                        <p class="impact-description">
-                           Magic⚡Power offers efficient and affordable power to awaken the next generation
-                           of entrepreneurs, and inspire creativity across across Africa.
-                        </p>
-                     </div>
-                     <div class="col-lg-4 col-md-6 impact-item">
-                        <div class="impact-icon"><i class="fas fa-globe-africa"></i></div>
-                        <h4 class="impact-title"><a href="#">Climate action (SDG13)</a></h4>
-                        <p class="impact-description">
-                           Magic⚡Power is taking the fight against carbon emissions very seriously.
-                           Our solar power systems help our customers to reduce carbon emissions and protect the planet.
-                        </p>
-                     </div>
-                     <div class="col-lg-4 col-md-6 impact-item">
-                        <div class="impact-icon"><i class="fas fa-city"></i></div>
-                        <h4 class="impact-title"><a href="#">Sustainable cities and communities (SDG11)</a></h4>
-                        <p class="impact-description">
-                           Our mission is to builds resilient and vibrant communities of tomorrow that unleash
-                           the potential of Africa's people and its natural resources.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- End social-impact Section -->
-         <!-- ======= Subscribe Section ======= -->
-         <section id="subscribe">
-            <div class="container wow fadeInUp">
-               <div class="row">
-                  <div class="col-md-8">
-                     <h3 class="subscribe-title">Notice!</h3>
-                     <p class="subscribe-text">
-                         Due to the limited supply of installation equipment, we may have to
-                         temporarily shutdown the submitting of any new applications until further notice.
-                         However, applications still remain open while stock lasts.
-                     </p>
-                  </div>
-                  <div class="col-md-4 subscribe-btn-container">
-                     <a class="subscribe-btn" href="{% url 'waitlist:apply' %}">Apply for a connection now</a>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- End Subscribe Section -->
-         <!-- ======= Testimonials Section ======= -->
-         <!-- <section id="testimonials">
-            <div class="container wow fadeInUp">
-                <div class="row">
-                    <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Testimonials</h2>
-                    <h3>Our <span>Testimonials</span></h3>
-                        <p class="title-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses
-                            haec dicturum fuisse</p>
-                    </div>
+            But that's not all, what really makes Switch stand out is it's ability 
+            to deliver on both <i>Performance</i> and <i>Beauty</i>. Each project is 
+            monumentalize by one of our beautify solar shelter. They stand as a symbol
+            of our clients desire for <i>Innovation, Elegance & Independence</i>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Start Cards -->
+    <section id="cards">
+      <div class="cards">
+
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="Concierge_files/card-1.jpg" alt="wave" />
+          </div>
+          <div class="card-title">
+            <h2>
+                Carports
+                <small>The perfect home for your cars</small>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="Concierge_files/card-2.jpg" alt="beach" />
+          </div>
+          <div class="card-title">
+            <h2>
+                Pergolas
+                <small>Perfect for garden parties & barbecues</small>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="Concierge_files/card-3.jpg" alt="mountain" />
+          </div>
+          <div class="card-title">
+            <h2>
+                Canopies
+                <small>Alway nice & cool by the pool</small>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="Concierge_files/card-4.jpg" alt="mountain" />
+          </div>
+          <div class="card-title">
+            <h2>
+                Awnings
+                <small>Exhibits innovation at your doorstep</small>
+            </h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image-holder">
+            <img class="card__image" src="Concierge_files/card-5.jpg" alt="mountain" />
+          </div>
+          <div class="card-title">
+            <h2>
+                Pavilions
+                <small>Perfect for Saturday & Sunday brunch</small>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- End Cards -->
+
+    <!-- Start Partners -->
+    <section class="partners">
+      <div class="container">
+        <div class="row">
+          <!-- Start Preamble -->
+          <div class="col-lg-12 preamble">
+            <h5>Meet Our Partners</h5>
+          </div>
+          <!-- End Preamble -->
+
+          <!-- Start Partner -->
+          <div class="col-lg-3 col-md-3 col-sm-3 company">
+            <a href="#"><img src="Concierge_files/company1.png" alt="" /></a>
+          </div>
+          <!-- End Partner -->
+
+          <!-- Start Partner -->
+          <div class="col-lg-3 col-md-3 col-sm-3 company">
+            <a href="#"><img src="Concierge_files/company2.png" alt="" /></a>
+          </div>
+          <!-- End Partner -->
+
+          <!-- Start Partner -->
+          <div class="col-lg-3 col-md-3 col-sm-3 company">
+            <a href="#"><img src="Concierge_files/company3.png" alt="" /></a>
+          </div>
+          <!-- End Partner -->
+
+          <!-- Start Partner -->
+          <div class="col-lg-3 col-md-3 col-sm-3 company">
+            <a href="#"><img src="Concierge_files/company4.png" alt="" /></a>
+          </div>
+          <!-- End Partner -->
+        </div>
+      </div>
+    </section>
+    <!-- End Partners -->
+
+    <!-- Start Footer -->
+    <footer id="footer">
+        <div class="container">
+          <!-- Start Footer-Content -->
+          <div class="footer-content">
+            <div class="row">
+              <!-- Start Widget-Address -->
+              <div class="col-lg-4 col-md-4 widget widget-about">
+                <h5>Switch HQ</h5>
+                <a href="https://goo.gl/maps/PTZ22khWX8LiQkcV9" title="Address">
+                  Roar Nigeria Hub,<br> Beside CEC,<br> University of Nigeria Nsukka<br>
+                </a><br>
+                General Enquiries:<br>
+                <i class="fa fa-phone-alt"></i>
+                <a href="tel:+234 808 114 7003">+234 808 114 7003</a><br>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:info@whyNotSwitch.com" title="Email Address">
+                  info@whyNotSwitch.com
+                </a>
+              </div>
+              <!-- End Widget-Address -->
+
+                <!-- Start Widget-Social -->
+                <div class="col-lg-4 col-md-4 widget widget-social">
+                <div class="preamble">
+                  <img src="Concierge_files/logo-rectangle.svg" alt="" />
                 </div>
-
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="profile">
-                            <div class="pic"><img src="assets/img/client-1.jpg" alt=""></div>
-                            <h4>Saul Goodman</h4>
-                            <span>Lawless Inc</span>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="quote">
-                            <b><img src="assets/img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem
-                            cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget
-                            id, aliquam eget nibh et. Maecen aliquam,
-                            risus at semper. <small><img src="assets/img/quote_sign_right.png" alt=""></small>
-                        </div>
-                    </div>
+                <!-- Start Widget-Social -->
+                <div class="social">
+                  <h5>@whyNotSwitch</h5>
+                  <a href="https://www.facebook.com/whynotswitch/">
+                    <i class="fab fa-facebook"></i>
+                  </a> 
+                  <a href="https://www.instagram.com/whynotswitch/">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                  </a>
                 </div>
+                <!-- End Widget-Social -->
+              </div>
+              <!-- End Widget-Social -->
 
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="quote">
-                            <b><img src="assets/img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste
-                            natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                            quae ab illo inventore veritatis architecto
-                            beatae. <small><img src="assets/img/quote_sign_right.png" alt=""></small>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="profile">
-                            <div class="pic"><img src="assets/img/client-2.jpg" alt=""></div>
-                            <h4>Sara Wilsson</h4>
-                            <span>Odeo Inc</span>
-                        </div>
-                    </div>
-                </div>
+              <!-- Start Widget-Newsletter -->
+              <div class="col-lg-4 col-md-4 widget widget-newsletter">
+                <h5>Only Available In</h5>
+                <img class="flag-icons" src="Concierge_files/ng-square.svg"> Nigeria
+              </div>
+              <!-- End Widget-Newsletter -->
+            </div>
+          </div>
+        </div>
+        <!-- End Footer-Content -->
 
+        <!-- Start Footer-Copyrights -->
+        <div class="footer-copyrights">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <p>Copyright 2021 © Switch. All rights reserved.</p>
+              </div>
             </div>
-            </div>
-            </section> --->
-         <!-- End Testimonials Section -->
-         <!-- ======= Contact Section ======= -->
-         <section id="contact" class="contact">
-            <div class="container">
-               <div class="section-title">
-                  <h2>Contact</h2>
-                  <h3>Contact <span>Us</span></h3>
-                  <p>We'll love to hear from you.
-                  </p>
-               </div>
-               <!-- ======= Map Section ======= -->
-               <!-- <div>
-                  <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJZf__t7nRBARfQ5mMIyiuP8&key=AIzaSyDoOpGvbeXfEtzXnaKVvV2sUkCiUsdPto4" frameborder="0" allowfullscreen></iframe>
-                  </div> -->
-               <!-- ======= End Map Section ======= -->
-               <div class="row mt-5">
-                  <div class="col-lg-4">
-                     <div class="info">
-                        <div class="address">
-                           <i class="fas fa-map-marker-alt"></i>
-                           <h4>Location:</h4>
-                           <p>University of Nigeria Nsukka Campus, Nsukka, Enugu, Nigeria</p>
-                        </div>
-                        <div class="email">
-                           <i class="fas fa-envelope"></i>
-                           <h4>Email:</h4>
-                           <p>info.poweredbymagic@gmail.com</p>
-                        </div>
-                        <div class="phone">
-                           <i class="fas fa-phone"></i>
-                           <h4>Call:</h4>
-                           <p>+234 808 114 7003</p>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-8 mt-5 mt-lg-0">
-                     <form class="php-email-form">
-                        <div class="form-row">
-                           <div class="col-md-6 form-group">
-                              <input type="text" name="name" class="form-control" id="name"
-                                 placeholder="Your Name" />
-                           </div>
-                           <div class="col-md-6 form-group">
-                              <input type="email" class="form-control" name="email" id="email"
-                                 placeholder="Your Email" data-rule="email" />
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <input type="text" class="form-control" name="subject" id="subject"
-                              placeholder="Subject" />
-                        </div>
-                        <div class="form-group">
-                           <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                        </div>
-                        <div class="text-center"><button type="submit" id="send">Send Message</button></div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </section>
-         <!-- End Contact Section -->
-      </main>
-      <!-- End #main -->
-   {% endblock body_content %}
+          </div>
+        </div>
+        <!-- End Footer-Copyrights -->
+    </footer>
+    <!-- End Footer -->
 
-   {% block js %}
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js" integrity="sha512-g2PN+aYR0KupTVwea5Ppqw4bxWLLypWdd+h7E0ydT8zF+/Y2Qpk8Y1SnzVw6ZCVJPrgB/91s3VfhVhP7Y4+ucw==" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="{% static 'js/slides.js' %}"></script>
-      <!-- Template Main JS File -->
-      <script src="{% static 'js/landing.js' %}"></script>
-   {% endblock js %}
+    <!-- SCRIPTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Concierge_files/cards.js"></script>
+    <script src="Concierge_files/landing.js"></script>
+  </body>
+</html>

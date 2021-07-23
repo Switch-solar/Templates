@@ -3,21 +3,31 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <!-- META TAGS -->
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Switch</title>
-    <link rel="shortcut icon" href="#" />
+    <meta name="google-site-verification" content="7Md7CnryEOcKgtedcz1Sm9ytVy_VZMDuVBJfS8D-JkU" />
+  	<meta name="keywords" content="Solar Installation, Solar company, Solar Energy Company, 
+    Solar Panels, Solar Power System, Solar System For Home, Solar Inverter">
+    <meta name="author" content="Ifeanyi Christwin">
+    <meta name="description" content="First-rate electricity service for a simple monthly fee"> <!-- TODO: edit discription -->
+    <title>Switch - Deluxe Solar Installations</title>
+
+    <!-- FAVICON -->
+    <link href="https://raw.githubusercontent.com/WhyNotSwitch/Media/main/favicon.png" rel="shortcut icon">
 
     <!-- GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic"/>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"> 
     <!-- STYLESHEETS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
     <link rel="stylesheet" href="{% static 'css/landing.css' %}"/>
-    <link rel="stylesheet" href="{% static 'css/cards.css' %}" />
   </head>
 
   <body>
@@ -29,9 +39,9 @@
         </a>
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li class="active-nav"><a href="#hero"><strong>Home</strong></a></li>
             <li><a href="#about"><strong>About</strong></a></li>
-            <li><a href="#cards"><strong>Gallery</strong></a></li>
+            <li><a href="#gallery"><strong>Gallery</strong></a></li>
+            <li><a href="#partners"><strong>Partners</strong></a></li>
             <li><a href="#footer"><strong>Contact</strong></a></li>
           </ul>
         </nav>
@@ -41,7 +51,7 @@
     <!-- Start Hero -->
     <section id="hero">
       <div class="hero-container">
-        <h1>Go solar in Style</h1>
+        <h1>Go Solar In Style</h1>
         <div class="links">
           <a href="#about" class="btn-get-started scrollto">Learn More</a>
         </div>
@@ -71,104 +81,105 @@
     </section>
     <!-- End About -->
 
-    <!-- Start Cards -->
-    <section id="cards">
-      <div class="cards">
-
-        <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://res.cloudinary.com/christwin/image/upload/v1623968215/Switch%28media%29/card-1_hzcetf.jpg" alt="solar carport" />
-          </div>
-          <div class="card-title">
-            <h2>
-                Carports
-                <small>The perfect home for your cars</small>
-            </h2>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://res.cloudinary.com/christwin/image/upload/v1623968215/Switch%28media%29/card-2_s078er.jpg" alt="solar pergola" />
-          </div>
-          <div class="card-title">
-            <h2>
-                Pergolas
-                <small>Perfect for garden parties & barbecues</small>
-            </h2>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://res.cloudinary.com/christwin/image/upload/v1623968214/Switch%28media%29/card-3_vpmevu.jpg" alt="solar canopy" />
-          </div>
-          <div class="card-title">
-            <h2>
-                Canopies
-                <small>Alway nice & cool by the pool</small>
-            </h2>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://res.cloudinary.com/christwin/image/upload/v1623968214/Switch%28media%29/card-4_quez81.jpg" alt="solar awning" />
-          </div>
-          <div class="card-title">
-            <h2>
-                Awnings
-                <small>Exhibits innovation at your doorstep</small>
-            </h2>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card__image-holder">
-            <img class="card__image" src="https://res.cloudinary.com/christwin/image/upload/v1623968237/Switch%28media%29/card-5_v9flyv.jpg" alt="pavilion" />
-          </div>
-          <div class="card-title">
-            <h2>
-                Pavilions
-                <small>Perfect for Saturday & Sunday brunch</small>
-            </h2>
-          </div>
-        </div>
-      </div>
+    <!-- Start Gallery -->
+    <section id="gallery">
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691460/Switch%28media%29/img-1_v6hb4e.jpg">
+        <figure class="gallery-image">
+          <img height="1400" src="https://res.cloudinary.com/christwin/image/upload/v1626691460/Switch%28media%29/img-1_v6hb4e.jpg" width="1400">
+          <figcaption>Solar Garden Pergola</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691458/Switch%28media%29/img-2_dn04f8.jpg">
+        <figure class="gallery-image">
+          <img height="1600" src="https://res.cloudinary.com/christwin/image/upload/v1626691458/Switch%28media%29/img-2_dn04f8.jpg" width="1600">
+          <figcaption>Solar Porch</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691457/Switch%28media%29/img-3_vs8i83.jpg">
+        <figure class="gallery-image">
+          <img height="1600" src="https://res.cloudinary.com/christwin/image/upload/v1626691457/Switch%28media%29/img-3_vs8i83.jpg" width="1400">
+          <figcaption>Solar Pool Shade</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691461/Switch%28media%29/img-4_sscv6r.jpg">
+        <figure class="gallery-image">
+          <img height="1600" src="https://res.cloudinary.com/christwin/image/upload/v1626691461/Switch%28media%29/img-4_sscv6r.jpg" width="1600">
+          <figcaption>Solar Pavilion</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691459/Switch%28media%29/img-5_ukctgt.jpg">
+        <figure class="gallery-image">
+          <img height="1000" src="https://res.cloudinary.com/christwin/image/upload/v1626691459/Switch%28media%29/img-5_ukctgt.jpg" width="1200">
+          <figcaption>Solar Carport</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691459/Switch%28media%29/img-6_xuqjhw.jpg">
+        <figure class="gallery-image">
+          <img height="1600" src="https://res.cloudinary.com/christwin/image/upload/v1626691459/Switch%28media%29/img-6_xuqjhw.jpg" width="1400">
+          <figcaption>Solar Balcony Shade</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691461/Switch%28media%29/img-7_zde89y.jpg">
+        <figure class="gallery-image">
+          <img height="1600" src="https://res.cloudinary.com/christwin/image/upload/v1626691461/Switch%28media%29/img-7_zde89y.jpg" width="1200">
+          <figcaption>Solar Porch</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691455/Switch%28media%29/img-8_gbieqm.jpg">
+        <figure class="gallery-image">
+          <img height="1400" src="https://res.cloudinary.com/christwin/image/upload/v1626691455/Switch%28media%29/img-8_gbieqm.jpg" width="1600">
+          <figcaption>Solar Rooftop Shade</figcaption>
+        </figure>
+      </a>
+      <a class="gallery-link" href="https://res.cloudinary.com/christwin/image/upload/v1626691458/Switch%28media%29/img-9_kgiso1.jpg">
+        <figure class="gallery-image">
+          <img height="1400" src="https://res.cloudinary.com/christwin/image/upload/v1626691458/Switch%28media%29/img-9_kgiso1.jpg" width="1600">
+          <figcaption>Solar Pool Shade</figcaption>
+        </figure>
+      </a>
     </section>
-      <!-- End Cards -->
+    <!-- End Gallery -->
 
     <!-- Start Partners -->
-    <section class="partners">
+    <section id="partners">
       <div class="container">
         <div class="row">
           <!-- Start Preamble -->
           <div class="col-lg-12 preamble">
             <h5>Meet Our Partners</h5>
+            <img src="https://res.cloudinary.com/christwin/image/upload/v1625836945/Switch%28media%29/divisor_mc3xwa.png" alt="" class="divisor">
           </div>
           <!-- End Preamble -->
 
           <!-- Start Partner -->
           <div class="col-lg-3 col-md-3 col-sm-3 company">
-            <a href="#"><img src="https://res.cloudinary.com/christwin/image/upload/v1623967299/Switch%28media%29/company1_p3iwom.png" alt="" /></a>
+            <a href="http://www.roarnigeriahub.com/">
+              <img src="https://res.cloudinary.com/christwin/image/upload/v1625849402/Switch%28media%29/Roar_evbncz.jpg" alt="Roar Nigeria Hub" />
+            </a>
           </div>
           <!-- End Partner -->
 
           <!-- Start Partner -->
           <div class="col-lg-3 col-md-3 col-sm-3 company">
-            <a href="#"><img src="https://res.cloudinary.com/christwin/image/upload/v1623967299/Switch%28media%29/company2_kd5exn.png" alt="" /></a>
+            <a href="https://auxanosolar.com/">
+              <img src="https://res.cloudinary.com/christwin/image/upload/v1625849405/Switch%28media%29/Auxano_q2jfil.jpg" alt="Auxano Solar" />
+            </a>
           </div>
           <!-- End Partner -->
 
           <!-- Start Partner -->
           <div class="col-lg-3 col-md-3 col-sm-3 company">
-            <a href="#"><img src="https://res.cloudinary.com/christwin/image/upload/v1623967299/Switch%28media%29/company3_frakpr.png" alt="" /></a>
+            <a href="https://edosteel.sitesng.com/">
+              <img src="https://res.cloudinary.com/christwin/image/upload/v1625849404/Switch%28media%29/Edosteel_pg5mdn.jpg" alt="Edosteel Constructions" />
+            </a>
           </div>
           <!-- End Partner -->
 
           <!-- Start Partner -->
           <div class="col-lg-3 col-md-3 col-sm-3 company">
-            <a href="#"><img src="https://res.cloudinary.com/christwin/image/upload/v1623967299/Switch%28media%29/company4_k0jy57.png" alt="" /></a>
+            <a href="https://www.peltonbattery.com/">
+              <img src="https://res.cloudinary.com/christwin/image/upload/v1626440881/Switch%28media%29/Pelton_ilmv3k.jpg" alt="" />
+            </a>
           </div>
           <!-- End Partner -->
         </div>
@@ -201,7 +212,7 @@
                 <!-- Start Widget-Social -->
                 <div class="col-lg-4 col-md-4 widget widget-social">
                 <div class="preamble">
-                  <img src="https://res.cloudinary.com/christwin/image/upload/v1623993425/Switch%28media%29/logo-rectangle_grvb0y.png" alt="" />
+                  <img src="https://res.cloudinary.com/christwin/image/upload/v1623992912/Switch%28media%29/SwitchLogoTagline_xo5deh.png" alt="" />
                 </div>
                 <!-- Start Widget-Social -->
                 <div class="social">
@@ -246,9 +257,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="{% static 'js/cards.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="{% static '/js/gallery.js' %}"></script>
     <script src="{% static 'js/landing.js' %}"></script>
   </body>
 </html>

@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-{% extends "common/base.html" %}
 {% load static %}
 
    {% block title %}
-      Magic⚡Power Application Form
+      Switch Application Form
    {% endblock title %}
 
    {% block css %}
-      {{ block.super }}
       <!-- Custom CSS -->
       <link href="{% static 'css/application.css' %}" rel="stylesheet" />
       <!-- Responsive CSS -->
@@ -107,7 +105,6 @@
    {% block footer %}
       <footer class="page-footer font-small stylish-color-dark pt-4">
         {% block copyright %}
-          {{ block.super }}
         {% endblock copyright %}
       </footer>
    {% endblock footer %}

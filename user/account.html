@@ -383,7 +383,7 @@
                           <th>Amount</th>
                           <th>Time</th>
                           <th>Payment status</th>
-                        </tr>  
+                        </tr>
                       </thead><tbody><tr>
                       {% for transaction in pending %}
                         <td>
@@ -408,38 +408,39 @@
                     <div class="table-responsive">
                       <table class="table table-striped table-borderless">
                         <thead>
-                          <tr>
-                            <th>ID</th>
-                            <th>Active</th>
-                            <th>Address</th>
-                          </tr>  
+                        <tr>
+                          <th>ID</th>
+                          <th>Mode</th>
+                          <th>Switch on</th>
+                          <th>Switch off</th>
+                        </tr>
                         </thead><tbody><tr>
                         {% for meter in meters %}
                         <td>
-                          {{ meter.uid }}
+                          {{ meter }}
                         </td>
                         <td>
-                          {{ meter.is_active }}
+                          {% if meter.is_active %}
+                          <b>on</b>
+                          {% else %}
+                          <b>off</b>
+                          {% endif %}
                         </td>
                         <td>
-                          {{ meter.site.address}}
+                          <button aria-expanded="false" aria-haspopup="false" class="btn btn-sm btn-success bgwhite"
+                                  data-toggle="button" id="meterOn" type="button">
+                            <a href="{% url 'meters:on' meter.pk %}" style="color:white"> <i
+                                    class="mdi mdi-calendar"></i> METERS ON</a>
+                          </button>
+                        </td>
+                        <td>
+                          <button aria-expanded="false" aria-haspopup="false" class="btn btn-sm btn-danger bgwhite"
+                                  data-toggle="button" id="meterOff" type="button">
+                            <a href="{% url 'meters:off' meter.pk %}" style="color:white"> <i
+                                    class="mdi mdi-calendar"></i> METERS OFF</a>
+                          </button>
                         </td>
                       </tr>
-                      <button aria-expanded="false" aria-haspopup="false"
-                              class="btn btn-sm btn-success bgwhite " data-toggle="button" id="meterButton"
-                              type="button">
-                        <a href="{% url 'meters:on' meter.pk %}" style="color:white">
-                          <i class="mdi mdi-calendar"></i> METERS ON
-                        </a>
-                      </button>
-                      </td></tr>
-                      <button aria-expanded="false" aria-haspopup="false"
-                              class="btn btn-sm btn-danger bgwhite " data-toggle="button" id="meterButton"
-                              type="button">
-                        <a href="{% url 'meters:off' meter.pk %}" style="color:white">
-                          <i class="mdi mdi-calendar"></i> METERS OFF
-                        </a>
-                      </button>
                       {% endfor %}
                       </tbody></table>
                     </div>
@@ -500,7 +501,7 @@
   <script src="{% static 'dashboard/js/alerts.js' %}"></script>
   <script src="{% static 'dashboard/js/avgrund.js' %}"></script>
   <!-- meter controls -->
-  <script src="js/meter.js"></script>
+  <script src="{% static 'dashboard/js/meter.js' %}"></script>
 
   <div class="avgrund-overlay "></div>
 </body></html>

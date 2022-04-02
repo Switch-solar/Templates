@@ -266,8 +266,9 @@
                 <div class="col-12 col-xl-4">
                 <div class="justify-content-end d-flex">
                   <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
-                    <button class="btn btn-sm btn-success bgwhite " type="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                    <i class="mdi mdi-calendar"></i> Account Active
+                    <button class="btn btn-sm btn-success bgwhite " type="button" data-toggle="dropdown"
+                            aria-haspopup="false" aria-expanded="false">
+                      <i class="mdi mdi-calendar"></i> Account Active
                     </button>
                   </div>
                 </div>
@@ -414,16 +415,32 @@
                           </tr>  
                         </thead><tbody><tr>
                         {% for meter in meters %}
-                          <td>
-                            {{ meter.uid }}
-                          </td>
-                          <td>
-                            {{ meter.is_active }}
-                          </td>
-                          <td>
-                            {{ meter.site.address}}
-                          </td></tr>
-                        {% endfor %}
+                        <td>
+                          {{ meter.uid }}
+                        </td>
+                        <td>
+                          {{ meter.is_active }}
+                        </td>
+                        <td>
+                          {{ meter.site.address}}
+                        </td>
+                      </tr>
+                      <button aria-expanded="false" aria-haspopup="false"
+                              class="btn btn-sm btn-success bgwhite " data-toggle="button" id="meterButton"
+                              type="button">
+                        <a href="{% url 'meters:on' meter.pk %}" style="color:white">
+                          <i class="mdi mdi-calendar"></i> METERS ON
+                        </a>
+                      </button>
+                      </td></tr>
+                      <button aria-expanded="false" aria-haspopup="false"
+                              class="btn btn-sm btn-danger bgwhite " data-toggle="button" id="meterButton"
+                              type="button">
+                        <a href="{% url 'meters:off' meter.pk %}" style="color:white">
+                          <i class="mdi mdi-calendar"></i> METERS OFF
+                        </a>
+                      </button>
+                      {% endfor %}
                       </tbody></table>
                     </div>
                   </div>
@@ -482,6 +499,8 @@
   <script src="{% static 'dashboard/js/jquery.js' %}"></script>
   <script src="{% static 'dashboard/js/alerts.js' %}"></script>
   <script src="{% static 'dashboard/js/avgrund.js' %}"></script>
+  <!-- meter controls -->
+  <script src="js/meter.js"></script>
 
-<div class="avgrund-overlay "></div>
+  <div class="avgrund-overlay "></div>
 </body></html>
